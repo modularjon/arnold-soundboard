@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Terminator;
+  src: url('fonts/terminator.ttf');
+}
+
 html {
  font-size: 10px;
  background: url('images/arnold-terminator.jpg') bottom center;
@@ -10,23 +15,27 @@ body,html {
   font-family: sans-serif;
 }
 
+kbd {
+  font-family: Terminator;
+}
+
 .keys {
   display: flex;
   flex: 1;
   min-height: 100vh;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
+  border: .4rem solid rgba(100,100,100,1);
+  border-radius: 2rem;
   margin: 1rem;
   font-size: 5rem;
   padding: 1rem .5rem;
   width: 10rem;
   text-align: center;
   color: rgba(200,0,0,1);
-  background: rgba(255,255,255,0.1);
-  text-shadow: 0 0 .5rem white;
+  background: rgba(255,255,255,0.15);
+  text-shadow: 0 0 1rem white;
 }

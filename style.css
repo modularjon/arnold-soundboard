@@ -33,11 +33,18 @@ kbd {
   margin: 1rem;
   font-size: 5rem;
   padding: 1rem .5rem;
+  transition: all 0.1s;
   width: 10rem;
   text-align: center;
   color: rgba(200,0,0,1);
   background: rgba(255,255,255,0.15);
   text-shadow: 0 0 1rem white;
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color: #ffc600;
+  box-shadow: 0  0 1rem #ffc600;
 }
 
 .sound {

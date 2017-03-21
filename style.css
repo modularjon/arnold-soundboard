@@ -28,7 +28,7 @@ kbd {
 }
 
 .key {
-  border: .4rem solid rgba(100,100,100,1);
+  border: .4rem solid #646464;
   border-radius: 2rem;
   margin: 1rem;
   font-size: 5rem;
@@ -36,19 +36,20 @@ kbd {
   transition: all 0.1s;
   width: 10rem;
   text-align: center;
-  color: rgba(200,0,0,1);
+  color: #c80000;
   background: rgba(255,255,255,0.15);
-  text-shadow: 0 0 1rem white;
+  text-shadow: 0 0 1rem #ffffff;
 }
 
 .playing {
   transform: scale(1.2);
-  border-color: #ffc600;
-  box-shadow: 0  0 1rem #ffc600;
+  border-color: #c80000;
+  box-shadow: 0  0 1rem #c80000;
 }
 
 .sound {
   font-size: 1.2rem;
   letter-spacing: .1rem;
-  color: #ffc600;
+  text-shadow: none;
+  color: #c80000;
 }

@@ -50,14 +50,16 @@
     <script>
       window.addEventListener('keydown', function(e) {
         const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
+        const key = document.querySelector(`.key[data-key='${e.keyCode}']`);
 
         if(!audio) return;
-        
+
         audio.currentTime = 0; // returns audio to 0 time whenever key is pressed.
                               // this is INTENTIONAL! I like being able to spam
                               // Arnie sounds.
 
         audio.play();
+        key.classList.add('playing');
       });
     </script>
 

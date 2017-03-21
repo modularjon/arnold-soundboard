@@ -50,9 +50,17 @@
     <audio data-key="71" src=""></audio>
     <audio data-key="72" src=""></audio>
     <audio data-key="74" src=""></audio>
-    <audio data-key="75" src=""></audio>
+    <audio data-key="75" src="sounds/cutie_pie.wav"></audio>
 
     <script>
+      window.addEventListener('keydown', function(e) {
+        const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
+        console.log(audio);
+
+        if(!audio) return;
+
+        audio.play();
+      });
     </script>
 
   </body>

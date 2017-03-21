@@ -39,3 +39,9 @@ kbd {
   background: rgba(255,255,255,0.15);
   text-shadow: 0 0 1rem white;
 }
+
+.sound {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
